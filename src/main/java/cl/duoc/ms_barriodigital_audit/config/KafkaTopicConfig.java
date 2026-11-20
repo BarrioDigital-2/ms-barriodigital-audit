@@ -1,4 +1,4 @@
-package cl.duoc.ms_kafka_consumer.config;
+package cl.duoc.ms_barriodigital_audit.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;

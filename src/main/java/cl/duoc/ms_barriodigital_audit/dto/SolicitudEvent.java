@@ -1,4 +1,4 @@
-package cl.duoc.ms_kafka_consumer.dto;
+package cl.duoc.ms_barriodigital_audit.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

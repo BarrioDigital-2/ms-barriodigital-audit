@@ -1,4 +1,4 @@
-package cl.duoc.ms_kafka_consumer.controller;
+package cl.duoc.ms_barriodigital_audit.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +14,7 @@ public class MetricasController {
     @GetMapping("/health")
     public ResponseEntity<Map<String, String>> health() {
         return ResponseEntity.ok(Map.of(
-                "servicio", "ms-kafka-consumer",
+                "servicio", "ms-barriodigital-audit",
                 "estado", "activo"
         ));
     }
