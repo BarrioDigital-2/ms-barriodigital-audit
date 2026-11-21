@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class AuditoriaConsumer {
 
     @KafkaListener(
-            topics = "solicitudes-eventos",
+            topics = "${audit.kafka.topic}",
             groupId = "auditoria-processor"
     )
     public void consumir(SolicitudEvent evento) {
