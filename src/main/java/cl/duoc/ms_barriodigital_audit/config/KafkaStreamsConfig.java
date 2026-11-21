@@ -1,4 +1,4 @@
-package cl.duoc.ms_kafka_consumer.config;
+package cl.duoc.ms_barriodigital_audit.config;
 
 import java.time.Duration;
 
@@ -19,7 +19,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafkaStreams;
 import org.springframework.kafka.support.serializer.JacksonJsonSerde;
 
-import cl.duoc.ms_kafka_consumer.dto.SolicitudEvent;
+import cl.duoc.ms_barriodigital_audit.dto.SolicitudEvent;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

@@ -1,6 +1,6 @@
-package cl.duoc.ms_kafka_consumer.consumer;
+package cl.duoc.ms_barriodigital_audit.consumer;
 
-import cl.duoc.ms_kafka_consumer.dto.SolicitudEvent;
+import cl.duoc.ms_barriodigital_audit.dto.SolicitudEvent;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
