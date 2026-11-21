@@ -14,6 +14,11 @@ public class AuditoriaConsumer {
             groupId = "auditoria-processor"
     )
     public void consumir(SolicitudEvent evento) {
+                // Un evento sin id no se puede auditar: la excepción activa los reintentos y luego el DLT
+        if (evento.getId() == null) {
+            throw new IllegalArgumentException("Evento sin id de solicitud");
+        }
+
         log.info("📋 [Auditoría] Evento recibido: tipo={}, solicitudId={}, comuna={}",
                 evento.getTipo(), evento.getId(), evento.getComunaId());
 
