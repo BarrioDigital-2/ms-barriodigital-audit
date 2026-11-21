@@ -16,4 +16,5 @@ public class SolicitudEvent {
     private String descripcion;
     private String estado;
     private String timestamp;
+    private String tipo_tramite;
 }
